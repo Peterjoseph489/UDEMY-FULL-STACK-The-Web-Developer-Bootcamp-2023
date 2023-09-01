@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
 html {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
@@ -60,19 +65,19 @@ body {
     min-height: 100vh;
 }
 
+
 .panel {
     background-color: #fff;
     width: 100%;
     max-width: 550px;
-    height: 80%;
     border-radius: 10px;
     padding: 15px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    text-transform: uppercase;
-}
+    text-transform: uppercase; 
+} 
 
 .pricing-plan {
     border-bottom: 1px solid #e1f1ff;
@@ -116,4 +121,45 @@ body {
     display: block;
     font-size: 32px;
     font-weight: 700;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
+    background-color: #269aff;
+    color: white;
+}
+
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
