@@ -50,8 +50,6 @@ let isHappy = true;
 
 
 
-
-
 //Naming Conventions
 // Use upper camel-cased names:
 let numberOfChickens = 6; //GOOD
