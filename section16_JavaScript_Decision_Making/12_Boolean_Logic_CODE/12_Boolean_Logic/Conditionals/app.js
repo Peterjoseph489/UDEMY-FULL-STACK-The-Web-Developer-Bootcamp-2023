@@ -1,6 +1,7 @@
 // =====================
 // BASIC IF/ELSE
 // =====================
+
 let random = Math.random();
 if (random < 0.5) {
     console.log("YOUR NUMBER IS LESS THAN 0.5!!!")
@@ -67,5 +68,5 @@ if (password.length >= 6) {
     console.log("PASSWORD TOO SHORT! Must be 6+ characters")
 }
 
-
+alert("Please enter a valid email address for this operation");
 
